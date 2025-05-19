@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clay Smash! 2</title>
@@ -276,11 +277,25 @@
         }
         
         #seismic-logo .text {
-            color: #3c2c1e;
-            font-size: 40px;
-            font-weight: bold;
-            margin-top: 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 80px;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+            animation: pulse 2s infinite ease-in-out;
+            opacity: 0.7;
+            pointer-events: none;
+            }
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 60px #00ffff;
         }
+    
     </style>
 </head>
 <body>
